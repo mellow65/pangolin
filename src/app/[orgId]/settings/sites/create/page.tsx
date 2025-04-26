@@ -180,24 +180,24 @@ PersistentKeepalive = 5`;
             },
             linux: {
                 amd64: [
-                    `wget -O newt "https://github.com/fosrl/newt/releases/download/${version}/newt_linux_amd64" && chmod +x ./newt`,
-                    `./newt --id ${id} --secret ${secret} --endpoint ${endpoint}`
+					'wget -O newt_installer.sh "https://raw.githubusercontent.com/mellow65/newt_installer/refs/heads/main/newt_installer.sh" && chmod +x ./newt_installer.sh'
+					'./newt_install.sh --id ${id} --secret ${secret} --endpoint ${endpoint} --version ${version} --architecture "newt_linux_amd64"'
                 ],
                 arm64: [
-                    `wget -O newt "https://github.com/fosrl/newt/releases/download/${version}/newt_linux_arm64" && chmod +x ./newt`,
-                    `./newt --id ${id} --secret ${secret} --endpoint ${endpoint}`
+					'wget -O newt_installer.sh "https://raw.githubusercontent.com/mellow65/newt_installer/refs/heads/main/newt_installer.sh" && chmod +x ./newt_installer.sh'
+					'./newt_install.sh --id ${id} --secret ${secret} --endpoint ${endpoint} --version ${version} --architecture "newt_linux_arm64"'
                 ],
                 arm32: [
-                    `wget -O newt "https://github.com/fosrl/newt/releases/download/${version}/newt_linux_arm32" && chmod +x ./newt`,
-                    `./newt --id ${id} --secret ${secret} --endpoint ${endpoint}`
+					'wget -O newt_installer.sh "https://raw.githubusercontent.com/mellow65/newt_installer/refs/heads/main/newt_installer.sh" && chmod +x ./newt_installer.sh'
+					'./newt_install.sh --id ${id} --secret ${secret} --endpoint ${endpoint} --version ${version} --architecture "newt_linux_arm32"'
                 ],
                 arm32v6: [
-                    `wget -O newt "https://github.com/fosrl/newt/releases/download/${version}/newt_linux_arm32v6" && chmod +x ./newt`,
-                    `./newt --id ${id} --secret ${secret} --endpoint ${endpoint}`
+					'wget -O newt_installer.sh "https://raw.githubusercontent.com/mellow65/newt_installer/refs/heads/main/newt_installer.sh" && chmod +x ./newt_installer.sh'
+					'./newt_install.sh --id ${id} --secret ${secret} --endpoint ${endpoint} --version ${version} --architecture "newt_linux_arm32v6"'
                 ],
                 riscv64: [
-                    `wget -O newt "https://github.com/fosrl/newt/releases/download/${version}/newt_linux_riscv64" && chmod +x ./newt`,
-                    `./newt --id ${id} --secret ${secret} --endpoint ${endpoint}`
+					'wget -O newt_installer.sh "https://raw.githubusercontent.com/mellow65/newt_installer/refs/heads/main/newt_installer.sh" && chmod +x ./newt_installer.sh'
+					'./newt_install.sh --id ${id} --secret ${secret} --endpoint ${endpoint} --version ${version} --architecture "newt_linux_arm32v6"'
                 ]
             },
             freebsd: {
